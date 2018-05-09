@@ -33,13 +33,7 @@
     <finalName>vulnapp</finalName>
     
           <plugins>
-            <plugin>
-                <groupId>com.fortify.ps.maven.plugin</groupId>
-                <artifactId>sca-maven-plugin</artifactId>
-                <version>3.90</version>
-
-            </plugin>
-
+           
         </plugins>
   </build>
 </project>
