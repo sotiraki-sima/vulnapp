@@ -52,3 +52,9 @@ jobs:
           path: /tmp/artifacts
       # run tests!
       #- run: mvn integration-test
+
+deployment:
+  prod:
+    branch: master
+    commands:
+      - aws s3 sync /home/circleci/repo/target/vulnapp.war s3://gdpr-test1/ --delete
