@@ -31,9 +31,5 @@
   </dependencies>
   <build>
     <finalName>vulnapp</finalName>
-    
-          <plugins>
-           
-        </plugins>
   </build>
 </project>
