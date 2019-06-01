@@ -12,7 +12,7 @@
 	 		String userid=request.getParameter("uname"); 
 	 		String pass=request.getParameter("pass"); 
 	 		Class.forName("com.mysql.jdbc.Driver"); 
-	 		java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/test","test","test"); 
+	 		java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/test","username","secretPassword"); 
 	 		Statement st= con.createStatement(); 
 	 		ResultSet rs=st.executeQuery("select * from users where username='"+userid+"'"); 
 	 		if(rs.next()) { 				

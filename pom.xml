@@ -5,7 +5,7 @@
   <artifactId>vulnapp</artifactId>
   <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
-  <name>vulnapp Maven Webapp</name>
+  <name>VulnApp Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
@@ -19,17 +19,33 @@
 		<groupId>mysql</groupId>
 		<artifactId>mysql-connector-java</artifactId>
 		<version>5.1.6</version>
+    
 	</dependency>
 	
+
+
 	<dependency>
 	    <groupId>org.seleniumhq.selenium</groupId>
 	    <artifactId>selenium-java</artifactId>
 	    <version>2.21.0</version>
 	</dependency>
-    
          
   </dependencies>
   <build>
+    
     <finalName>vulnapp</finalName>
+
+        <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>2.3.1</version>
+            <configuration>
+                <source>1.7</source>
+                <target>1.7</target>
+            </configuration>
+        </plugin>
+    </plugins>
+
   </build>
 </project>
