@@ -8,7 +8,6 @@
 	 	if ("POST".equalsIgnoreCase(request.getMethod())) {
 	 		String uname = request.getParameter("uname");
 	 		out.println("You input the username: " + uname + "<br>");
-	 		/*
 	 		String userid=request.getParameter("uname"); 
 	 		String pass=request.getParameter("pass"); 
 	 		Class.forName("com.mysql.jdbc.Driver"); 
@@ -23,7 +22,6 @@
 	 				out.println("Invalid password try again"); 
 	 			}
 	 		}
-	 		*/
 		}
 	 %>
 
